@@ -1,8 +1,4 @@
-const books = () => (
-  <form>
-    <input type="text" className="title" placeholder="title" />
-    <input type="text" className="author" placeholder="author" />
-    <button type="submit">submit</button>
-  </form>
-);
+import CreateNewBook from '../../components/CreateNewBook';
+
+const books = () => (<CreateNewBook />);
 export default books;
