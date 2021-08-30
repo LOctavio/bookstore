@@ -1,5 +1,3 @@
-const books = () => {
-  return (<h1>Books</h1>);
-}
+const books = () => (<h1>Books</h1>);
 
 export default books;

@@ -1,5 +1,3 @@
-const categories = () => {
-  return (<h1>Under construction</h1>);
-}
+const categories = () => (<h1>Under construction</h1>);
 
 export default categories;
