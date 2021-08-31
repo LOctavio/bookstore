@@ -8,7 +8,7 @@ import {
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import Categories from './redux/categories/categories';
-import CreateNewBook from './components/CreateNewBook';
+import Books from './components/Books';
 import store from './redux/configureStore';
 
 ReactDOM.render(
@@ -25,7 +25,7 @@ ReactDOM.render(
         </ul>
         <Switch>
           <Route exact path="/">
-            <CreateNewBook />
+            <Books />
           </Route>
           <Route path="/categories">
             <Categories />
