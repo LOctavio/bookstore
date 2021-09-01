@@ -7,13 +7,13 @@ const CreateNewBook = () => {
   const dispatch = useDispatch();
 
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const submitBookToStore = () => {
     const newBook = {
       id: uuidv4(),
       title,
-      author,
+      category,
     };
     dispatch(addBook(newBook));
   };
@@ -21,7 +21,7 @@ const CreateNewBook = () => {
   return (
     <form>
       <input type="text" className="title" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)} />
-      <input type="text" className="author" placeholder="author" value={author} onChange={(e) => setAuthor(e.target.value)} />
+      <input type="text" className="category" placeholder="category" value={category} onChange={(e) => setCategory(e.target.value)} />
       <button
         type="submit"
         onClick={(e) => {
