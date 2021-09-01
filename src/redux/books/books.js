@@ -16,7 +16,18 @@ const addBookToAPI = async (book) => {
       'Content-Type': 'application/json',
     },
   })
-    .then(() => console.log('added'));
+    .then();
+};
+
+const deleteBookfromAPI = async (book) => {
+  const id = book.item_id;
+  await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/eTfxKsR9wf3ubgm9W4xT/books/${id}`, {
+    method: 'DELETE',
+    body: JSON.stringify({
+      id,
+    }),
+  })
+    .then();
 };
 
 export const addBook = (payload) => ({
@@ -40,6 +51,7 @@ const reducer = (state = initialState, action) => {
       addBookToAPI(action.payload);
       return [...state, action.payload];
     case REMOVE_BOOK:
+      deleteBookfromAPI(action.payload);
       return state.filter((book) => book.item_id !== action.payload.item_id);
     case GET_BOOK_LIST:
       return action.payload;
