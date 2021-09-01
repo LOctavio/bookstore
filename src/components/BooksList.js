@@ -7,7 +7,12 @@ const BooksList = (props) => {
   return (
     <ul>
       {books.map((book) => (
-        <Book key={book.item_id} title={book.title} category={book.category} id={book.item_id} />
+        <Book
+          key={book.item_id}
+          title={book.title}
+          category={book.category}
+          item_id={book.item_id}
+        />
       ))}
     </ul>
   );

@@ -8,7 +8,7 @@ const addBookToAPI = async (book) => {
   await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/eTfxKsR9wf3ubgm9W4xT/books', {
     method: 'POST',
     body: JSON.stringify({
-      item_id: book.id,
+      item_id: book.item_id,
       title: book.title,
       category: book.category,
     }),
@@ -40,7 +40,7 @@ const reducer = (state = initialState, action) => {
       addBookToAPI(action.payload);
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload.id);
+      return state.filter((book) => book.item_id !== action.payload.item_id);
     case GET_BOOK_LIST:
       return action.payload;
     default:

@@ -11,7 +11,7 @@ const CreateNewBook = () => {
 
   const submitBookToStore = () => {
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       category,
     };
