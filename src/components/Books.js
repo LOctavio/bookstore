@@ -31,6 +31,9 @@ const Books = () => {
 
   useEffect(() => {
     getBookList();
+    return () => {
+      setBooks([]);
+    };
   }, []);
 
   return (
