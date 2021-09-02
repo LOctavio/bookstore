@@ -26,6 +26,10 @@
     url("./fonts/RobotoSlab/RobotoSlab-Bold.ttf") format("truetype");
 }
 
+body {
+  margin: 0;
+}
+
 .main-container {
   background-color: #f5f6fa;
 }
