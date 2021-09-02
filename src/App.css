@@ -1,3 +1,61 @@
-.example {
-  color: red;
+@font-face {
+  font-family: "MonserratBold";
+  src: local("MonserratBold"),
+   url("./fonts/montserrat/Montserrat-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: local("Monserrat"),
+   url("./fonts/montserrat/Montserrat-Regular.otf") format("truetype");
+}
+
+.navbar {
+  display: flex;
+  align-items: stretch;
+  height: 5.938rem;
+  line-height: 95px;
+  padding: 0 6.25rem;
+  position: relative;
+}
+
+.navbar > h1 {
+  color: #0290ff;
+  font-family: 'MonserratBold';
+  font-size: 1.875rem;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 2;
+  list-style-type: none;
+  font-family: 'Monserrat';
+  font-size: 0.813rem;
+  margin: 0;
+}
+
+.home-link, .categories-link{
+  text-decoration: none;
+  padding: 20px;
+  letter-spacing: 1.9px;
+  color: #a0a0a0;
+}
+
+.home-link:focus, .categories-link:focus{
+  color: #121212;
+}
+
+.circle {
+  width: 2.813rem;
+  height: 2.813rem;
+  margin: 1.438rem 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.user-icon {
+  color: #0290ff;
 }
