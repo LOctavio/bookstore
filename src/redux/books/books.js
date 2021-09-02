@@ -15,8 +15,7 @@ const addBookToAPI = async (book) => {
     headers: {
       'Content-Type': 'application/json',
     },
-  })
-    .then();
+  });
 };
 
 const deleteBookfromAPI = async (book) => {
@@ -26,8 +25,7 @@ const deleteBookfromAPI = async (book) => {
     body: JSON.stringify({
       id,
     }),
-  })
-    .then();
+  });
 };
 
 export const addBook = (payload) => ({
