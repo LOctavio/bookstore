@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "MonserratBold";
+  font-family: "MontserratBold";
   src:
-    local("MonserratBold"),
+    local("MontserratBold"),
     url("./fonts/montserrat/Montserrat-Bold.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Monserrat";
+  font-family: "Montserrat";
   src:
-    local("Monserrat"),
+    local("Montserrat"),
     url("./fonts/montserrat/Montserrat-Regular.otf") format("truetype");
 }
 
@@ -37,7 +37,7 @@
 
 .navbar > h1 {
   color: #0290ff;
-  font-family: 'MonserratBold', sans-serif;
+  font-family: 'MontserratBold', sans-serif;
   font-size: 1.875rem;
   margin: 0;
 }
@@ -46,7 +46,7 @@
   display: flex;
   flex-grow: 2;
   list-style-type: none;
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   margin: 0;
 }
@@ -101,7 +101,7 @@
 }
 
 .category {
-  font-family: "MonserratBold", sans-serif;
+  font-family: "MontserratBold", sans-serif;
   font-size: 0.875rem;
   color: #888;
 }
@@ -157,7 +157,7 @@
 
 .progress-percentage {
   font-size: 2rem;
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .completed-label {
@@ -196,6 +196,53 @@
   font-size: 0.813rem;
   width: 11.5rem;
   height: 2.063rem;
+  color: #fff;
+  border-radius: 3px;
+  border:none;
+}
+
+.line-between-sections {
+  margin: 2.5rem 6.25rem 1.813rem 6.25rem;
+  border: solid 1px #e8e8e8;
+}
+
+.new-book {
+  padding: 0 6.25rem;
+  height: 26.813rem;
+}
+
+.new-book-label {
+  font-family: 'MontserratBold';
+  font-size: 1.25rem;
+  margin: 1.188rem 0;
+  color: #888;
+}
+
+.new-book-form {
+  display: flex;
+  height: 2.813rem;
+}
+
+.title-input, .category-input {
+  margin-right: 2.125rem;
+  padding: 0 1.063rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.title-input {
+  flex-grow: 2;
+}
+
+.category-input {
+  width: 17.813rem;
+}
+
+.add-book-btn {
+  width: 11.5rem;
+  font-family: 'Roboto Slab Bold', sans-serif;
+  font-size: 0.813rem;
+  background-color: #0290ff;
   color: #fff;
   border-radius: 3px;
   border:none;

@@ -39,6 +39,7 @@ const Books = () => {
   return (
     <>
       <BooksList books={books} />
+      <div className="line-between-sections" />
       <CreateNewBook />
     </>
   );
