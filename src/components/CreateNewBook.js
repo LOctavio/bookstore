@@ -20,8 +20,8 @@ const CreateNewBook = () => {
 
   return (
     <form>
-      <input type="text" className="title" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)} />
-      <input type="text" className="category" placeholder="category" value={category} onChange={(e) => setCategory(e.target.value)} />
+      <input type="text" className="title-input" placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)} />
+      <input type="text" className="category-input" placeholder="category" value={category} onChange={(e) => setCategory(e.target.value)} />
       <button
         type="submit"
         onClick={(e) => {

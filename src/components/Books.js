@@ -38,8 +38,8 @@ const Books = () => {
 
   return (
     <>
-      <CreateNewBook />
       <BooksList books={books} />
+      <CreateNewBook />
     </>
   );
 };
