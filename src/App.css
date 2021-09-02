@@ -207,7 +207,7 @@ body {
   height: 2.063rem;
   color: #fff;
   border-radius: 3px;
-  border:none;
+  border: none;
 }
 
 .line-between-sections {
@@ -221,7 +221,7 @@ body {
 }
 
 .new-book-label {
-  font-family: 'MontserratBold';
+  font-family: 'MontserratBold', sans-serif;
   font-size: 1.25rem;
   margin: 1.188rem 0;
   color: #888;
@@ -232,7 +232,8 @@ body {
   height: 2.813rem;
 }
 
-.title-input, .category-input {
+.title-input,
+.category-input {
   margin-right: 2.125rem;
   padding: 0 1.063rem;
   font-family: 'Montserrat', sans-serif;
@@ -254,5 +255,5 @@ body {
   background-color: #0290ff;
   color: #fff;
   border-radius: 3px;
-  border:none;
+  border: none;
 }
