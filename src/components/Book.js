@@ -10,13 +10,13 @@ const Book = (props) => {
     dispatch(removeBook(book));
   };
 
-  const { author, title } = props;
+  const { category, title } = props;
   return (
     <li>
       <span>
         {title}
         {' - '}
-        {author}
+        {category}
       </span>
       <input type="button" value="Delete" onClick={() => DeleteBookFromStore(props)} />
     </li>
@@ -24,7 +24,7 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
-  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
