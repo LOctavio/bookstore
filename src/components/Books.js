@@ -37,10 +37,11 @@ const Books = () => {
   }, []);
 
   return (
-    <>
-      <CreateNewBook />
+    <div className="main-container">
       <BooksList books={books} />
-    </>
+      <div className="line-between-sections" />
+      <CreateNewBook />
+    </div>
   );
 };
 

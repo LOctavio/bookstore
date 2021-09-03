@@ -5,7 +5,7 @@ import Book from './Book';
 const BooksList = (props) => {
   const { books } = props;
   return (
-    <ul>
+    <ul className="books-list">
       {books.map((book) => (
         <Book
           key={book.item_id}
